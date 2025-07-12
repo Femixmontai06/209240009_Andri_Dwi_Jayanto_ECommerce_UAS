@@ -314,7 +314,6 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  margin-top: 0.25rem;
   padding: 0.5rem;
 }
 #kategori >.category-list > a {
@@ -394,16 +393,17 @@ body {
     flex-wrap: wrap;
     width: 100%;
   }
-  .navigation {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  
   .footer-menu{
     text-align: center;
   }
   #kategori .category-list{
     flex-direction: column;
     align-items: center;
+  }
+  #kategori > .category-list > a {
+    width: 100%;
+    max-width: 300px;
   }
   .profile-dropdown{
     position: absolute;
@@ -431,12 +431,11 @@ body {
     gap: 1rem;
     background-color: #222;
     position: absolute;
-    top: 4.5rem;
-    right: 0;
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem;
-    z-index: 999;
+    z-index: 99;
   }
   .navigation.show{
     display: flex;
@@ -464,12 +463,18 @@ body {
   .footer-menu{
     text-align: center;
   }
-  #kategori .category-list{
+  #kategori > .category-list{
     flex-direction: column;
     align-items: center;
   }
+  #kategori > .category-list > a {
+    width: 100%;
+    max-width: 300px;
+  }
   .profile-dropdown{
-    margin-left: auto;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
   }
   .search-form {
     width: 100%;
@@ -510,9 +515,15 @@ body {
 @media (max-width: 480px) {
   /* Untuk ponsel kecil */
   .wrapper {
-    position: relative;
+    flex-direction: column;
   }
-  
+  .header-left{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   .product-card > h3 {
     font-size: 0.95rem;
   }
@@ -520,8 +531,13 @@ body {
   .product-card > button {
     font-size: 0.875rem;
   }
+  .search-form {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
   .search-bar {
-    width: auto;
+    min-width: auto;
+    width: 100%;
   }
   .footer-menu{
     text-align: center;
@@ -535,10 +551,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
-   .search-bar{
-    min-width: 25rem;
-    max-width: 30rem;
-   }
+  #kategori > .category-list > a {
+    width: 100%;
+    max-width: 300px;
+  }
    .product > img {
     min-width: 26rem;
     min-height: 26rem;
@@ -553,12 +569,11 @@ body {
     gap: 1rem;
     background-color: #222;
     position: absolute;
-    top: 4.5rem;
-    right: 0;
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem;
-    z-index: 999;
+    z-index: 99;
   }
   .navigation.show{
     display: flex;
