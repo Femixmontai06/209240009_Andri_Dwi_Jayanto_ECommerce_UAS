@@ -166,7 +166,6 @@ body {
 .card-product:hover {
   background-color: #f0e9e9;
   transform: scale(1.05);
-
 }
 .product-card {
   background: #fff;
@@ -250,27 +249,28 @@ body {
 }
 .product {
   display: flex;
-  flex-wrap: wrap;
+  gap: 1.25rem;
+  flex-direction: row;
   margin: 1.25rem auto;
   padding: 1.25rem;
   background-color: white;
   border-radius: 0.625rem;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
   max-width: 1000px;
-  gap: 1.25rem;
+  overflow: hidden;
 }
 .product > img {
-  width: auto;
-  max-width: 24.75rem;
-  max-height: 24.75rem;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
   border-radius: 0.625rem;
-  transition: transform 0.3s ease;
 }
 .product > img:hover {
   transform: scale(1.05);
 }
 .text {
-  flex: 1;
+  width: 50%;
+  text-align: justify;
 }
 .text > h1 {
   font-size: 1.25rem;
@@ -297,6 +297,12 @@ body {
   color: black;
   transition: all 0.3s ease-in-out;
 }
+.text > p {
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
 
 /* =================================== */
 /* Kategori produk */
@@ -314,6 +320,7 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  margin-top: 0.25rem;
   padding: 0.5rem;
 }
 #kategori >.category-list > a {
@@ -410,16 +417,19 @@ body {
     top: 0.75rem;
     right: 1rem;
   }
-  .product > img {
-    min-width: 41rem;
-    min-height: 41rem;
-  }
   .search-form {
     width: 100%;
     margin-top: 0.5rem;
   }
   .search-bar{
     min-width: auto;
+    width: 100%;
+  }
+  .product{
+    flex-direction: column;
+    text-align: center;
+  }
+  .product > img,.text {
     width: 100%;
   }
   #menu-toggle{
@@ -555,11 +565,7 @@ body {
     width: 100%;
     max-width: 300px;
   }
-   .product > img {
-    min-width: 26rem;
-    min-height: 26rem;
-    max-width: max-content;
-  }
+  
   #menu-toggle{
     display: block;
   }
