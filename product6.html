@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman E-commerce Sederhana</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- ================================= -->
+  <!-- Header dan Navigasi Utama -->
+  <!-- ================================= -->
+  <header>
+    <div class="fContainer">
+      <nav class="wrapper">
+        <div class="header-left">
+          <!--hamburger-->
+          <button id="menu-toggle" class="hamburger">&#9776;</button>
+          <!-- Logo Toko -->
+          <div class="brand">
+            <div class="firstname">WORLD</div>
+            <div class="lastname">SHOE</div>
+          </div>
+
+          <!-- Form Pencarian Produk -->
+          <form class="search-form">
+            <input type="search" placeholder="Cari produk..." class="search-bar" id="searchInput"/>
+          </form>
+        </div>
+
+        <!-- Menu Navigasi dan Profil -->
+        <div class="header-right">
+          <ul class="navigation" id="nav-menu">
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="index.html#section-title">PRODUK</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+            <li><a href="#" style="display: flex; align-items: center; gap: 0.375rem;"><img src="image/cart.png" alt="Keranjang" style="height: 1rem; filter: invert(1);" />KERANJANG</a></li>
+          </ul>
+
+          <!-- Dropdown Akun Profil -->
+          <div class="profile-dropdown">
+            <img src="image/icon-profil.png" alt="Akun" id="profileIcon" />
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a href="#">Signup</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Pengaturan</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+    <!-- ================================= -->
+    <!------------ Breadcrumbs ------------>
+    <!-- ================================= -->
+    <div class="breadcrumbs">
+      <a href="index.html">Beranda</a> 
+      <a href="index.html#section-title">Produk</a>
+      <a href="">Detail Produk</a>
+    </div>
+
+  <!-- Keterangan Produk  -->
+  <article class="product"> 
+      <img src="image/produk6.jpg" alt="Nike Air Force 1" />
+      <div class="text">
+        <h1>Nike Air Force 1</h1>
+        <span>RP1.909.000</span>
+        <button id="btnBeli">Beli</button>
+        <button id="btnKeranjang">+Keranjang</button>
+        <h3>Deskripsi</h3>
+        <p>Nike Air Force 1 adalah salah satu sneaker paling legendaris sepanjang masa, pertama kali diluncurkan pada tahun 1982 dan terus menjadi favorit hingga hari ini. Dikenal dengan desain bersih, sol tebal, dan siluet low-cut yang klasik, AF1 cocok untuk semua gaya dan suasana.</p>
+        <p>Dilengkapi dengan bantalan Nike Air di bagian tumit, sepatu ini memberikan kenyamanan empuk yang tahan lama. Upper kulit menambah kesan premium sekaligus daya tahan ekstra, sementara perforasi di bagian depan memastikan sirkulasi udara tetap baik.</p>
+        <p>Dengan gaya yang mudah dipadukan, Air Force 1 cocok untuk pakaian kasual, sporty, hingga streetwear. Hadir dalam banyak warna, namun warna putih klasik tetap jadi primadona.</p>
+        <p>Investasi tepat bagi siapa pun yang ingin tampil stylish dengan warisan sejarah sneaker yang kaya.</p>
+  </article>
+  
+
+  <!-- ================================= -->
+  <!-- Footer: Menu, Sosial, dan informasi kontak -->
+  <!-- ================================= -->
+  <footer>
+    <div class="footer-menu">
+      <div class="footer-nav">
+        <a href="kontak.html">Tentang Kami</a>
+        <a href="#">Bantuan</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat &amp; Ketentuan</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="image/socialicon1.jpg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="image/socialicon2.jpg" alt="Instagram" />
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+          <img src="image/socialicon3.jpg" alt="TikTok" />
+        </a>
+      </div>
+
+      <div class="information">
+        <h3>Contact Us</h3>
+        <p>Phone</P>
+        <p>08979297787</p>
+        <p>Email</p>
+        <p>worldshoes@gmail.com</p>
+        <p>Address</p>
+        <p>Jalan bantar gedang RT01 RW09 Desa Mekarsari Kecamatan Ngamprah Kabupaten Bandung Barat</p>
+      </div>
+      
+      <p>&copy; 2025; Designed by <span class="designed">Andri Dwi Jayanto</span></p>
+    </div>
+  </footer>
+</body>
+</html>

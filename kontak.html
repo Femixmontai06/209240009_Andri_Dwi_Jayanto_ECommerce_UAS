@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman E-commerce Sederhana</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- ================================= -->
+  <!-- Header dan Navigasi Utama -->
+  <!-- ================================= -->
+  <header>
+    <div class="fContainer">
+      <nav class="wrapper">
+        <div class="header-left">
+          <!--hamburger-->
+          <button id="menu-toggle" class="hamburger">&#9776;</button>
+          <!-- Logo Toko -->
+          <div class="brand">
+            <div class="firstname">WORLD</div>
+            <div class="lastname">SHOE</div>
+          </div>
+
+          <!-- Form Pencarian Produk -->
+          <form class="search-form">
+            <input type="search" placeholder="Cari produk..." class="search-bar" id="searchInput" />
+          </form>
+        </div>
+
+        <!-- Menu Navigasi dan Profil -->
+        <div class="header-right">
+          <ul class="navigation" id="nav-menu">
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="index.html#section-title">PRODUK</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+            <li><a href="#" style="display: flex; align-items: center; gap: 0.375rem;"><img src="image/cart.png" alt="Keranjang" style="height: 1rem; filter: invert(1);" />KERANJANG</a></li>
+          </ul>
+
+          <!-- Dropdown Akun Profil -->
+          <div class="profile-dropdown">
+            <img src="image/icon-profil.png" alt="Akun" id="profileIcon" />
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a href="#">Signup</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Pengaturan</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================================= -->
+    <!------------ Breadcrumbs ------------>
+    <!-- ================================= -->
+    <div class="breadcrumbs">
+      <a href="index.html">Beranda</a> 
+      <a href="kontak.html">Kontak</a> 
+    </div>
+
+  
+    <!-- ================================= -->
+    <!------------Halaman Kontak ------------>
+    <!-- ================================= -->
+    <main>
+        <section id="kontak" style="max-width: 600px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+            <h2>Hubungi Kami</h2>
+            <p>Silakan kirim pertanyaan atau pesan Anda melalui formulir berikut:</p>
+
+            <!-- Formulir Kontak -->
+            <form id="contactForm">
+                <!-- Input Nama -->
+                <div style="margin-bottom: 1rem;">
+                    <label for="nama">Nama</label><br />
+                    <input type="text" id="nama" name="nama" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;">
+                </div>
+
+                <!-- Input Email -->
+                <div style="margin-bottom: 1rem;">
+                    <label for="email">Email</label><br />
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;">
+                </div>
+
+                <!-- Textarea Pesan -->
+                <div style="margin-bottom: 1rem;">
+                    <label for="pesan">Pesan</label><br />
+                    <textarea id="pesan" name="pesan" rows="5" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;"></textarea>
+                </div>
+
+                <!-- Tombol Kirim (tanpa fungsi kirim) -->
+                <button type="submit" style="padding: 0.5rem 1.25rem; background-color: #27ae60; color: white; border: none; border-radius: 5px;">Kirim</button>
+            </form>
+        </section>
+    </main>
+  
+
+  <!-- ================================= -->
+  <!-- Footer: Menu, Sosial, dan informasi kontak -->
+  <!-- ================================= -->
+  <footer>
+    <div class="footer-menu">
+      <div class="footer-nav">
+        <a href="kontak.html">Tentang Kami</a>
+        <a href="#">Bantuan</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat &amp; Ketentuan</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="image/socialicon1.jpg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="image/socialicon2.jpg" alt="Instagram" />
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+          <img src="image/socialicon3.jpg" alt="TikTok" />
+        </a>
+      </div>
+
+      <div class="information">
+        <h3>Contact Us</h3>
+        <p>Phone</P>
+        <p>08979297787</p>
+        <p>Email</p>
+        <p>worldshoes@gmail.com</p>
+        <p>Address</p>
+        <p>Jalan bantar gedang RT01 RW09 Desa Mekarsari Kecamatan Ngamprah Kabupaten Bandung Barat</p>
+      </div>
+      
+      <p>&copy; 2025; Designed by <span class="designed">Andri Dwi Jayanto</span></p>
+    </div>
+  </footer>
+</body>
+</html>

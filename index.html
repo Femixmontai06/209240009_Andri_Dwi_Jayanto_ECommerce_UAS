@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman E-commerce Sederhana</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- ================================= -->
+  <!-- Header dan Navigasi Utama -->
+  <!-- ================================= -->
+  <header>
+    <div class="fContainer">
+      <nav class="wrapper">
+        <div class="header-left">
+          <!--hamburger-->
+          <button id="menu-toggle" class="hamburger">&#9776;</button>
+          <!-- Logo Toko -->
+          <div class="brand">
+            <div class="firstname">WORLD</div>
+            <div class="lastname">SHOE</div>
+          </div>
+
+          <!-- Form Pencarian Produk -->
+          <form class="search-form">
+            <input type="search" placeholder="Cari produk..." class="search-bar" id="searchInput"/>
+          </form>
+        </div>
+
+        <!-- Menu Navigasi dan Profil -->
+        <div class="header-right">
+          <ul class="navigation" id="nav-menu">
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="#section-title">PRODUK</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+            <li><a href="#"><img src="image/cart.png" alt="Keranjang" style="height: 1rem; filter: invert(1);" />KERANJANG</a></li>
+          </ul>
+
+          <!-- Dropdown Akun Profil -->
+          <div class="profile-dropdown">
+            <img src="image/icon-profil.png" alt="Akun" id="profileIcon" />
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a href="#">Signup</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Pengaturan</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================= -->
+    <!------------ Breadcrumbs ------------>
+    <!-- ================================= -->
+    <div class="breadcrumbs">
+      <a href="index.html">Beranda</a> 
+      <a href="#section-title">Produk</a> 
+    </div>
+
+    <!-- ================================= -->
+    <!-- Kategori produk -->
+    <!-- ================================= -->
+
+    <section id="kategori">
+      <div class="category-list">
+        <a href="product7.html">Sneakers</a>
+        <a href="product1.html">Sports</a>
+        <a href="product6.html">Casual</a>
+        <a href="product2.html">Basket</a>
+        <a href="product4.html">Kids</a>
+      </div>
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- Judul Bagian Produk Unggulan -->
+    <!-- ================================= -->
+    <h2 class="section-title" id="section-title">PRODUK UNGGULAN</h2>
+
+    <!-- ================================= -->
+    <!-- Grid Produk (Katalog Halaman Utama) -->
+    <!-- ================================= -->
+    <section class="products-grid">
+
+      <!-- Kartu Produk 1 -->
+      <a href="product1.html" class="card-product">
+        <div class="product-card"> 
+          <img src="image/produk1.jpg" alt="Nike Air Zoom SuperRep 2" />
+          <h3>Nike Air Zoom SuperRep 2</h3>
+          <span>RP641.000</span>
+          <p>Sepatu training Nike Air Zoom SuperRep 2 dirancang untuk latihan intensitas tinggi dengan bantalan Zoom Air responsif.</p>
+        </div>
+      </a>
+
+      <!-- Kartu Produk 2 -->
+      <a href="product2.html" class="card-product">
+        <div class="product-card">
+          <img src="image/produk2.jpg" alt="Air Jordan 12 Gym Red" />
+          <h3>Air Jordan 12 Gym Red</h3>
+          <span>RP3.200.000</span>
+          <p>Air Jordan 12 Gym Red hadir dengan desain klasik dan warna merah mencolok yang siap tampil standout di mana saja.</p>
+        </div>
+      </a>
+
+      <!-- Kartu Produk 3 -->
+      <a href="product3.html" class="card-product">
+        <div class="product-card">
+          <img src="image/produk3.jpg" alt="Nike Air Max 1" />
+          <h3>Nike Air Max 1</h3>
+          <span>RP1.300.000</span>
+          <p>Nike Air Max 1 hadir dengan desain ikonik dan unit Air visible yang memberikan kenyamanan sepanjang hari.</p>
+        </div>
+      </a>
+
+      <!-- Kartu Produk 4 -->
+      <a href="product4.html" class="card-product">
+        <div class="product-card">
+          <img src="image/produk4.jpg" alt="Sepatu Converse All Star" />
+          <h3>Sepatu Converse All Star </h3>
+          <span>RP479.000</span>
+          <p>Converse All Star adalah sepatu kanvas klasik yang tak lekang oleh waktu dan cocok untuk semua gaya.</p>
+        </div>
+      </a>
+
+      <!-- Kartu Produk 5 -->
+      <a href="product5.html" class="card-product">
+        <div class="product-card">
+          <img src="image/produk5.jpg" alt="Converse x CDG Play Low White" />
+          <h3>Converse x CDG Play Low White</h3>
+          <span>RP2.899.000</span>
+          <p>Kolaborasi Converse x CDG Play menampilkan siluet ikonik dengan sentuhan hati khas Comme des Garçons.</p>
+        </div>
+      </a>
+
+      <!-- Kartu Produk 6 -->
+      <a href="product6.html" class="card-product">
+        <div class="product-card">
+          <img src="image/produk6.jpg" alt="Nike Air Force 1" />
+          <h3>Nike Air Force 1</h3>
+          <span>RP1.909.000</span>
+          <p>Nike Air Force 1 sepatu sneaker klasik serbaguna dengan desain yang bersih dan kenyamanan ikonik.</p>
+        </div>
+      </a>
+
+      <!-- Kartu Produk 7 -->
+      <a href="product7.html" class="card-product">
+        <div class="product-card">
+          <img src="image/produk7.jpg" alt="Puma RS-Z Reinvent Sneakers " />
+          <h3>Puma RS-Z Reinvent Sneakers</h3>
+          <span>RP1.249.000</span>
+          <p>Puma RS-Z Reinvent menampilkan desain chunky dan warna pastel yang trendi untuk gaya sporty modern.</p>
+        </div>
+      </a>
+
+      <!-- Kartu Produk 8 -->
+      <a href="product8.html" class="card-product">
+        <div class="product-card">
+          <img src="image/produk8.jpg" alt="Adidas Continental 80" />
+          <h3>Adidas Continental 80</h3>
+          <span>RP1.299.000</span>
+          <p>Adidas Continental 80 menghadirkan nuansa retro '80-an dengan desain low-top dan detail dua garis ikonik.</p>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <!-- ================================= -->
+  <!-- Footer: Menu, Sosial, dan informasi kontak -->
+  <!-- ================================= -->
+  <footer>
+    <div class="footer-menu">
+      <div class="footer-nav">
+        <a href="kontak.html">Tentang Kami</a>
+        <a href="#">Bantuan</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat &amp; Ketentuan</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="image/socialicon1.jpg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="image/socialicon2.jpg" alt="Instagram" />
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+          <img src="image/socialicon3.jpg" alt="TikTok" />
+        </a>
+      </div>
+
+      <div class="information">
+        <h3>Contact Us</h3>
+        <p>Phone</P>
+        <p>08979297787</p>
+        <p>Email</p>
+        <p>worldshoes@gmail.com</p>
+        <p>Address</p>
+        <p>Jalan bantar gedang RT01 RW09 Desa Mekarsari Kecamatan Ngamprah Kabupaten Bandung Barat</p>
+      </div>
+      
+      <p>&copy; 2025; Designed by <span class="designed">Andri Dwi Jayanto</span></p>
+    </div>
+  </footer>
+</body>
+</html>
